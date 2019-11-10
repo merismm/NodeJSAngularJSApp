@@ -1,0 +1,26 @@
+{
+  "languages":{
+    "en":"English",
+    "bs":"Bosnian"
+  },
+  "user":{
+    "first_name":"First name",
+    "last_name":"Last name",
+    "gender":"Gender",
+    "username":"Username",
+    "password":"Password",
+    "email":"Email",
+    "information":"User info",
+    "friends":"User friends",
+    "birthday":"Birthday"
+  },
+  "select_language":"Language",
+  "login":"Login",
+  "logout":"Logout",
+  "profile":"Profile",
+  "signup":"Register",
+  "create_account": "Create an Account",
+  "delete_feed":"Delete feed",
+  "welcome_message":"Welcome",
+  "short_description":"web application with Facebook and local login"
+}

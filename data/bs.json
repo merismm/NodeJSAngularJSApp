@@ -1,0 +1,27 @@
+{
+  "languages":{
+    "en":"Engleski",
+    "bs":"Bosanski"
+  },
+  "user":{
+    "first_name":"Ime",
+    "last_name":"Prezime",
+    "gender":"Spol",
+    "username":"Korisnicko ime",
+    "password":"Sifra",
+    "email":"Email",
+    "information":"Korisnicki info",
+    "friends":"Korisnikovi prijatelji",
+    "birthday":"Datum rodjenja"
+
+  },
+  "select_language":"Jezik",
+  "login":"Prijava",
+  "logout":"Odjava",
+  "profile":"Profil",
+  "signup":"Registruj se",
+  "create_account": "Kreiraj korisnika",
+  "delete_feed":"Obrisi objavu",
+  "welcome_message":"Dobro dosli",
+  "short_description":"web aplikacija sa Facebook i lokalnom prijavom."
+}

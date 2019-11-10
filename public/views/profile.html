@@ -1,0 +1,53 @@
+<div class="container" ng-controller="ProfileCtrl">
+    <div class="col-sm-4">
+        <div class="panel panel-default">
+            <div class="panel-heading" translate="user.information"></div>
+            <div class="panel-body">
+                <div class="row"><span class="col-sm-3" translate="user.email" style="color: #337ab7;"></span><span class="col-sm-4">{{currentUser.facebook.email || currentUser.email}}</span>    </div>
+                <div class="row"><span class="col-sm-3" translate="user.gender" style="color: #337ab7;"></span><span class="col-sm-4">{{currentUser.facebook.gender || "N/A"}}</span>    </div>
+                <div class="row"><span class="col-sm-3" translate="user.birthday" style="color: #337ab7;"></span><span class="col-sm-4">{{currentUser.facebook.birthday || "N/A"}}</span>    </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" translate="user.friends"> </div>
+            <div class="panel-body">
+                <div  ng-repeat="friend in friends">
+                    <a>{{friend.name}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  class="col-sm-8">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-md-1">
+                        <img src="{{currentUser.facebook.photos[0].value || 'https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=60'}}">
+                    </div>
+                    <div class="col-md-5">
+                        <a href="{{currentUser.facebook.profileUrl || ''}}">{{currentUser.facebook.name || currentUser.username}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div ng-repeat="fed in feed">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <span>{{fed.message}}</span>
+                            </div>
+                            <div class="col-md-6">
+                                <span>{{parseDate(fed.created_time)}}</span>
+                            </div>
+                            <button type="button" class="btn btn-danger" ng-click="deleteFeed($index)" translate="delete_feed"></button>
+
+                        </div>
+                    </div>
+                    <div class="panel-body">{{fed.story}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
