@@ -33,7 +33,7 @@ Mongodb   -  [https://www.mongodb.com/]
 
 Following technologies are used in web application:
 
-AngularJS(translate,moment)
+AngularJS (translate,moment)
 
 Javascript
 
