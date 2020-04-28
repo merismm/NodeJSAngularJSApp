@@ -34,9 +34,13 @@ Mongodb   -  [https://www.mongodb.com/]
 Following technologies are used in web application:
 
 AngularJS(translate,moment)
+
 Javascript
+
 HTML,CSS,bootstrap
+
 NodeJS (express,passport,passport-facebook,file-system,dotenv...)
+
 MongoDB
 
 ### Installing
