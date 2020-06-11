@@ -1,4 +1,4 @@
-# Softhouse web application
+#  Web application
 
 Web application with Facebook and local login
 
